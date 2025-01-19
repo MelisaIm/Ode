@@ -74,7 +74,7 @@ app.get('/', async (req, res) => {
       "role": "assistant",
       "content": "In the shadows, fear will find no hold,  \nFor courage is the light that makes us bold,  \nRoosevelt spoke, his words a beacon bright,  \nGuiding us through the darkness of the night.  \n\nChange is the call that echoes through time,  \nGandhi's words a melody, pure and sublime,  \nBe the change you wish to see in the world,  \nLet your dreams and your actions be unfurled.  \n\nEleanor's wisdom, a truth we must heed,  \nDo one thing each day that makes your heart bleed,  \nFor it's in the doing that we find our might,  \nAnd cast off the shadows that haunt us at night.  \n\nFear is the specter that haunts our days,  \nBut courage is the light that guides our ways,  \nSo let us be brave and face our fears,  \nAnd watch as the darkness disappears.  \n\nThe change that we seek is within our grasp,  \nIf we dare to dream, if we dare to ask,  \nFor the power to change lies within our hands,  \nLet us rise up and make our stand.  \n\nSo let us be brave and face the unknown,  \nFor in the darkness, our light is shown,  \nLet us be the change we wish to see,  \nAnd set our hearts and our spirits free."
     },
-    prompt = "Write me a poem based on these 3 quotes: 'The only thing we have to fear is fear itself' (Franklin D. Roosevelt), 'You must be the change you wish to see in the world' (Mahatma Gandhi), 'Do one thing every day that scares you' (Eleanor Roosevelt)";
+    prompt: "Write me a poem based on these 3 quotes: 'The only thing we have to fear is fear itself' (Franklin D. Roosevelt), 'You must be the change you wish to see in the world' (Mahatma Gandhi), 'Do one thing every day that scares you' (Eleanor Roosevelt)"
   }
 
   res.status(200).json(sample_poem);
