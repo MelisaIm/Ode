@@ -2,6 +2,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import { OpenAI } from 'openai';
 import dotenv from 'dotenv';
+import cors from 'cors';
 
 dotenv.config();
 
@@ -9,6 +10,7 @@ const app = express();
 const port = process.env.PORT || 5001;
 
 // Middleware
+app.use(cors());
 app.use(bodyParser.json());
 
 // Initialize OpenAI API
