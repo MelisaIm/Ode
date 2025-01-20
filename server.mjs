@@ -11,7 +11,7 @@ const port = process.env.PORT || 5001;
 
 // Middleware
 app.use(cors({
-  origin: "https://odeapp.netlify.app/",
+  origin: "https://odeapp.netlify.app",
   methods: "GET,POST",
 }));
 app.use(bodyParser.json());
