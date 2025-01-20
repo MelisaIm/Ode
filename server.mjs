@@ -13,6 +13,7 @@ const port = process.env.PORT || 5001;
 app.use(cors({
   origin: "https://odeapp.netlify.app",
   methods: "GET,POST",
+  allowedHeaders: "Content-Type",
 }));
 app.use(bodyParser.json());
 
